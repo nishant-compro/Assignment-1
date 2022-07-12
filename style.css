@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.info-container {
+  background-color: #6040B0;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4rem 4rem 0 4rem;
+}
+
+.upper-heading {
+  font-size: 2vw;
+}
+
+.upper-heading > sup{
+  font-size: 0.8rem;
+}
+
+sup{
+  font-size: 1rem;
+}
+
+.main-heading {
+  font-size: 4.5vw;
+  font-family: 'Roboto';
+}
+
+hr {
+  background-color: white;
+  border-radius: 0.1rem;
+  border: 0.1rem solid white;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.sub-heading {
+  font-size: 2.5vw;
+  font-weight: lighter;
+  font-family: 'Roboto';
+}
+
+.content {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4rem 4rem 0 4rem;
+}
+
+.upper-text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.upper-text > sup{
+  font-size: 0.5rem;
+}
+
+.bottom-text {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.form-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60rem;
+}
+
+.new-member-link {
+  font-size: 0.9rem;
+  margin: 1rem 1rem 0 auto;
+
+}
+
+.new-member-link>a {
+  color: #6d44d4;
+  text-decoration: none;
+}
+
+.form-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem;
+  width: 40rem;
+}
+
+.form {
+  width: 60%;
+}
+
+.form-heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.password-block {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  background-color: rgb(242, 242, 242);
+  border: 0;
+  border-bottom: 0.1rem solid rgb(149, 149, 149);
+  font-size: 1rem;
+  height: 3.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+  outline: none;
+  padding: 0 2rem 0 1rem;
+  width: 100%;
+}
+
+
+.material-symbols-outlined {
+  cursor: pointer;
+  margin-left: -3rem;
+  align-self: center;
+  color: rgb(100, 99, 99);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.forgot-pass {
+  color: #6d44d4;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  text-align: right;
+  text-decoration: none;
+}
+
+.login-btn {
+  border: none;
+  background-color: rgb(227, 227, 227);
+  color: rgb(153, 153, 153);
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin: auto;
+  border-radius: 0.2rem;
+  width: 10rem;
+}
+
+.login-btn:hover {
+  background-color: rgb(155, 155, 155);
+  color: rgb(243, 243, 243);
+  cursor: pointer;
+}
+
+.footer {
+  font-family: Arial;
+  font-size: small;
+  margin-bottom: 0.5rem;
+  margin-top: auto;
+}
+
+.small-form-box {
+  display: none;
+}
+
+.small-footer {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  
+
+  .info-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-container {
+    display: none;
+  }
+
+  .header {
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+  }
+
+  .upper-heading {
+    font-size: 1.5rem;
+  }
+
+  .main-heading {
+    font-size: 4rem;
+    font-stretch: expanded;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .sub-heading {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+
+  .content {
+    align-self: center;
+    margin-bottom: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    width: 30rem;
+  }
+
+  .upper-text {
+    font-size: 1rem;
+  }
+
+  .bottom-text {
+    font-size: 1rem;
+  }
+
+  .small-form-box {
+    align-items: center;
+    align-self: center;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem 0 1rem;
+    width: 20rem;
+  }
+
+  .small-form {
+    width: 100%;
+  }
+
+  .new-member-link {
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .small-footer {
+    color: white;
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: auto;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .content {
+    width: auto;
+  }
+}
