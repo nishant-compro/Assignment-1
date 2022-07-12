@@ -1,5 +1,12 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: Arial;
 }
 
@@ -35,19 +42,22 @@ p {
 
 .main-heading {
   font-size: 4.5vw;
-  font-stretch: expanded;
+  /* font-stretch: expanded; */
+  font-family: 'Roboto';
 }
 
 hr {
   background-color: white;
   border-radius: 2px;
   border: 1.5px solid white;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+
 }
 
 .sub-heading {
   font-size: 2.5vw;
   font-weight: lighter;
+  font-family: 'Roboto';
 }
 
 .content {
@@ -73,7 +83,14 @@ hr {
 }
 
 .new-member-link {
+  font-size: 0.9rem;
   margin: 1rem 1rem 0 auto;
+
+}
+
+.new-member-link>a {
+  color: #6d44d4;
+  text-decoration: none;
 }
 
 .form {
@@ -87,6 +104,7 @@ hr {
 
 .form-heading {
   font-size: 2.5rem;
+  font-weight: 400;
   margin-bottom: 4%;
 }
 
@@ -99,6 +117,10 @@ hr {
   margin: 0.5rem 0 0.5rem 0;
   outline: none;
   width: 100%;
+}
+
+.input::placeholder {
+  padding-left: 1rem;
 }
 
 .forgot-pass {
@@ -114,12 +136,14 @@ hr {
 
 .login-btn {
   border: none;
-  color: grey;
+  background-color: rgb(227, 227, 227);
+  color: rgb(153, 153, 153);
   display: block;
   font-weight: bold;
   height: 2rem;
   margin-top: 1rem;
   margin: auto;
+  border-radius: 2px;
   width: 10rem;
 }
 
@@ -177,9 +201,11 @@ hr {
   }
 
   .content {
+    align-self: center;
     margin-bottom: 2rem;
     padding: 2rem 2rem 0 2rem;
     text-align: center;
+    width: 30rem;
   }
 
   .upper-text {
@@ -221,5 +247,12 @@ hr {
     margin-bottom: 1rem;
     margin-top: auto;
     text-align: center;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .content {
+    width: auto;
   }
 }
