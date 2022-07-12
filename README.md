@@ -7,7 +7,7 @@ Desktop Screen
 ![Desktop screen](./screenshots/desktop%20ss.png)
 
 iPad Screen
-![iPad Screen](./screenshots/assgn%20ss2.png)
+![iPad Screen](./screenshots/ipad%20ss.png)
 
 Mobile Screen
 ![Mobile Screen](./screenshots/mobile%20ss.png)
